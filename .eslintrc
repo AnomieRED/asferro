@@ -1,0 +1,37 @@
+{
+   "plugins": [
+      "import",
+      "node",
+      "prettier"
+   ],
+   "extends": [
+      "eslint:recommended",
+      "plugin:node/recommended",
+      "plugin:import/recommended",
+      "plugin:prettier/recommended",
+      "prettier"
+   ],
+   "env": {
+     "browser": true,
+     "node": true,
+     "es6": true
+   },
+   "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+   "rules": {
+      "no-debugger": "off",
+      "no-unused-vars": "off",
+      "prettier/prettier": [
+         "error", 
+         {
+            "eslintIntegration": true,
+            "useTabs": true,
+            "singleQuote": true,
+            "semi": true
+         }
+      ],
+      "no-console": 0
+   }
+}
