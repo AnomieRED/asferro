@@ -58,7 +58,6 @@ class Controllers {
 			if (!id) {
 				return res.status(404).json('id not specified');
 			}
-			console.log(id);
 			const update = await client.update({
 				index: 'film',
 				id: id,
